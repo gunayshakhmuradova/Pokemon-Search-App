@@ -1,0 +1,150 @@
+/* Global reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+/* Search input and button styling */
+#search-input {
+    padding: 12px;
+    width: 250px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-right: 10px;
+    transition: border-color 0.3s ease;
+}
+
+#search-input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+#search-button {
+    padding: 12px 24px;
+    margin: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#search-button:hover {
+    background-color: #218838;
+}
+
+/* Pokémon information container */
+#pokemon-info {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    text-align: center;
+}
+
+#pokemon-info h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+#pokemon-info p {
+    font-size: 18px;
+    margin: 8px 0;
+    color: #555;
+}
+
+#pokemon-id, #weight, #height {
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* Pokémon types styling */
+#types {
+    margin-top: 15px;
+}
+
+#types div {
+    display: inline-block;
+    background-color: #f8d030;
+    color: #333;
+    padding: 8px 14px;
+    border-radius: 20px;
+    margin: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+#types div:first-child {
+    background-color: #705898; /* Ghost type styling */
+}
+
+#types div:last-child {
+    background-color: #a040a0; /* Poison type styling */
+}
+
+/* Sprite styling */
+#sprite-container {
+    margin-top: 20px;
+}
+
+#sprite-container img {
+    max-width: 180px;
+    display: block;
+    margin: 0 auto;
+    border: 3px solid #ddd;
+    border-radius: 12px;
+    padding: 10px;
+    background-color: #fff;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 500px) {
+    body {
+        padding: 20px;
+    }
+
+    #search-input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #search-button {
+        width: 100%;
+        padding: 12px;
+    }
+
+    #pokemon-info {
+        width: 100%;
+        padding: 15px;
+    }
+
+    #pokemon-info h2 {
+        font-size: 22px;
+    }
+
+    #pokemon-info p {
+        font-size: 16px;
+    }
+
+    #sprite-container img {
+        max-width: 150px;
+    }
+}
